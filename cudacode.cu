@@ -55,6 +55,7 @@ void CheckCudaError(char sms[], int line);
 float GetTime(void);
 
 int main(int argc, char** argv) {
+    CheckCudaError((char *) "First line", __LINE__);
     int width,height, pixelWidth; //meta info de la imagen
     unsigned char *image; //imagen
     printf("Reading image...\n");
