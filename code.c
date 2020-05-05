@@ -8,8 +8,6 @@
 
 const char *filename = "lenna.png";
 const char* outputname = "gradient.png";
-const int maskx[3][3] = {{1, 0, -1}, {2, 0, -2}, {1, 0, -1}};
-const int masky[3][3] = {{1, 2, -1}, {0, 0, -0}, {-1, -2, -1}};
 unsigned char *image; //imagen
 int width,height, pixelWidth; //meta info de la imagen
 
