@@ -40,7 +40,7 @@ __global__ void KernelSobelElement (unsigned char *image, unsigned char *output,
   int gx = 0;
   int gy = 0;
   int s = 0;
-  if(i < height && j < width) {
+  if(i > 0 && j > 0 && i < (height-1) && j < (width-1)) {
       gx = image[(i-1)*width+j-1]+2*image[i*width+j-1]+image[(i+1)*width+j-1]
       -image[(i-1)*width+j+1]-2*image[i*width+j+1]-image[(i+1)*width+j+1];
       gy = image[(i-1)*width+j-1]+2*image[(i-1)*width+j]+image[(i-1)*width+j+1]
