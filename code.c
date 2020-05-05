@@ -36,5 +36,5 @@ int main() {
         }
     }
     stbi_write_png(outputname,width,height,1,image_d,0);
-    printf("Image Written");
+    printf("Image Written\n");
 }
